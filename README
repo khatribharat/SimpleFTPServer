@@ -1,0 +1,86 @@
+//#################################
+1. To compile the server
+(a)	cd server
+(b)	make clean; make all
+
+2. To compile the client
+(a)	cd client
+(b)	make clean; make all
+
+
+//###################################
+
+
+//###### User Manual ###############
+
+1) get file : get a file (file name specified) from server current directory to client current directory.
+
+:: USAGE ::
+
+ftp> GET/get <filename> 
+-----------------------------------------------------------------------------------------------------------
+
+2) put file     : put a file (file name specified) to server current directory from client current directory.
+
+:: USAGE ::
+
+ftp> PUT/put <filename> 
+-------------------------------------------------------------------------------------------------------------
+
+3) mget file    : gets multiple files (file name specified) from server current  directory to client current directory.
+
+:: USAGE ::
+
+ftp> MGET/mget <filename>,<filename>,<filename>,.. 
+--------------------------------------------------------------------------------------------------------------
+
+4) mput file    : puts multiple files (file name specified) to server current  directory from client current directory.
+
+:: USAGE ::
+
+ftp> mput/MPUT <filename>,<filename>,<filename> 
+-------------------------------------------------------------------------------------------------------------
+
+5) cd dir       : change server current directory.
+
+:: USAGE ::
+
+ftp> CD/cd <pathname> 
+-------------------------------------------------------------------------------------------------------------
+
+6) lcd dir      : change client local current directory.
+
+:: USAGE ::
+
+ftp> LCD/lcd <pathname> 
+-------------------------------------------------------------------------------------------------------------
+
+
+7) mget *       : mget with wildcard support.
+
+:: USAGE ::
+
+ftp> mget/MGET *
+-------------------------------------------------------------------------------------------------------------
+
+8) mput *       : mput with wildcard support.
+
+:: USAGE ::
+
+ftp> mput/MPUT *
+-------------------------------------------------------------------------------------------------------------
+
+9) dir          : Show the content of servers current directory.
+
+:: USAGE ::
+
+ftp> DIR/dir
+-------------------------------------------------------------------------------------------------------------
+
+10) ldir        : Show the content of clients current directory.
+
+:: USAGE ::
+
+ftp> LDIR/ldir
+-------------------------------------------------------------------------------------------------------------
+
